@@ -21,4 +21,16 @@ test.py
 log.log 파일 만드는 코드
 
 
+LHE보다 HepMC에서 W boson pt가 증가한 이벤트:
+event3
+event15
+event31
+event35
+event69
+event73
+event94
+event101
+event110
+event114
+event128
 
