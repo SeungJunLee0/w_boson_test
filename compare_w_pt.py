@@ -24,7 +24,7 @@ def get_lhe_w_pts(lhe_file):
                 if len(parts) < 10:
                     continue
                 pdg_id = int(parts[0])
-                if abs(pdg_id) == 24:
+                if pdg_id == 24:
                     px = float(parts[6])
                     py = float(parts[7])
                     current_pts.append(get_pt(px, py))
@@ -46,7 +46,7 @@ def get_hepmc2_w_pts(hepmc_file):
                 if len(parts) < 13:
                     continue
                 pid = int(parts[2])
-                if abs(pid) == 24:
+                if pid == 24:
                     px = float(parts[3])
                     py = float(parts[4])
                     current_pts.append(get_pt(px, py))
