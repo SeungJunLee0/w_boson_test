@@ -79,12 +79,12 @@ lhe_events = extract_w_from_lhe(lhe_file)
 # 비교 및 출력
 for i, (hepmc_ws, lhe_ws) in enumerate(zip(hepmc_events, lhe_events), start=1):
     print(f"event{i}")
-    for w in hepmc_ws:
-        print("hepmc 정보")
-        print(w["line"])
-        print(f"pt = {w['pt']:.2f}")
     for w in lhe_ws:
         print("lhe 정보")
+        print(w["line"])
+        print(f"pt = {w['pt']:.2f}")
+    for w in hepmc_ws:
+        print("hepmc 정보")
         print(w["line"])
         print(f"pt = {w['pt']:.2f}")
     print("-" * 40)
